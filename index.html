@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image search</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <div class="container">
+    <h3>Search any image from Flickr</h3>
+    <input type="text" class="form-control" id="searchBox" onkeypress="return search(event)">
+  </div>
+
+  <div class="container">
+    <div id="imageContainer"><img src="home.jpg" class="home img-responsive"/></div>
+    <button type="button" id="loadButton" class="btn btn-default btn-lg btn-block hideElement">Load more ...</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
